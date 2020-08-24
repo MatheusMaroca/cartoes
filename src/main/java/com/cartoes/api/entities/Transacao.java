@@ -15,7 +15,6 @@ import javax.persistence.PreUpdate;
 import javax.persistence.Table;
 
 import com.fasterxml.jackson.annotation.JsonBackReference;
-import com.fasterxml.jackson.annotation.JsonManagedReference;
 
 @Entity
 @Table(name = "transacao")
@@ -56,7 +55,7 @@ public class Transacao implements Serializable {
 		return dataTransacao;
 	}
 
-	public void DataTransacao(Date dataTransacao) {
+	public void setDataTransacao(Date dataTransacao) {
 		this.dataTransacao = dataTransacao;
 	}
 	
@@ -76,15 +75,15 @@ public class Transacao implements Serializable {
 		this.valor = valor;
 	}
 	
-	public int getQdtParcelas(int qdtparcelas) {
+	public int getQdtParcelas() {
 		return qdtParcelas;
 	}
 
-	public int setqdtParcelas(int qdtParcelas) {
+	public void setQdtParcelas(int qdtParcelas) {
 		this.qdtParcelas = qdtParcelas;
 	}
 	
-	public Double getJuros() {
+	public double getJuros() {
 		return juros;
 	}
 

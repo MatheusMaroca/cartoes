@@ -16,7 +16,6 @@ import javax.persistence.Table;
 import com.fasterxml.jackson.annotation.JsonBackReference;
 import com.fasterxml.jackson.annotation.JsonManagedReference;
 
-@SuppressWarnings("unused")
 @Entity
 @Table(name = "transacao")
 public class Transacao implements Serializable {
